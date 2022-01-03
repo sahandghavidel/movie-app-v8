@@ -1,7 +1,9 @@
-export default function Results() {
-    return (
-        <div>
-            <h1>Results</h1>
-        </div>
-    )
+export default function Results({ results }) {
+  return (
+    <div>
+      {results.map((result) => (
+        <h1>{result.title}</h1>
+      ))}
+    </div>
+  );
 }
